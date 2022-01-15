@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <!-- Crud Info -->
+    <meta name="keyword" content="CRUD,Create,Read,Update,Delete,System"/>
+    <meta name="description" content="Small Application on Javascript"/>
+    <!-- icon install -->
+    <link rel="icon" href="assets/icon.png"/>
+    <!-- sweetalert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- document title -->
+    <title>CRUD System</title>
+</head>
+<body>
+
+    <div class="container">
+        <button id="backClr">Click Here To Chang Background Color !!</button>
+        <section>
+            <h1>CRUD System</h1>
+
+            <div class="input">
+            <label for="name">Course Name</label>
+            <input class="input" id="name" type="text" placeholder="Course Name...">
+            <div class="error">Please start with capital letter, numbers and letters only allowed</div>
+            <label for="category">Course Category</label>
+            <input class="input" id="category" type="text" placeholder="Course Category">
+            <div class="error">Please start with capital letter, numbers and letters only allowed</div>
+            <label for="price">Course Price</label>
+            <input class="input" id="price" type="number" placeholder="$">
+            <label for="description">Course Description</label>
+            <textarea class="input" name="Description" id="description" cols="20" rows="2" placeholder="Description"></textarea>
+            <button id="Add">Add Course</button>
+            <button id="Clr">Clear</button>
+            </div>
+
+            <input id="search" type="search" placeholder="Search...">
+
+            <table border="2">
+                <thead>
+                    <tr>
+                    <th class="th1">#</th>
+                    <th class="th2">Name</th>
+                    <th class="th3">Category</th>
+                    <th class="th4">Price</th>
+                    <th class="th5">description</th>
+                    <th>Update</th>
+                    <th>Delete</th>  
+                    </tr> 
+                </thead>
+
+                <tbody id="data">
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+    <!-- Js File && sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
